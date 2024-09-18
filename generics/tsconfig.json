@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "rootDir": "./",
+      "listFiles": true,
+      "module": "es6",
+      "skipLibCheck": true,
+      "target": "es5",
+      "lib": [ "es2015", "dom" ]
+    },
+}
