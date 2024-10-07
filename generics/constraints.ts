@@ -9,8 +9,6 @@ function identify<T>(arg: T): T {
 }
 
 
-
-
 // K 一定要滿足是 T 的 property
 function getProperty<T, K extends keyof T>(obj: T, key: K) {
     return obj[key];
@@ -21,6 +19,6 @@ const value1 = getProperty({ foo: 'bar' }, 'foo');
 
 // 或者將型別明確給入
 interface IPayload {
-foo: string;
+  foo: string;
 }
 const value2 = getProperty<IPayload, 'foo'>({ foo: 'bar' }, 'foo');
